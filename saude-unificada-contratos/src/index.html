@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <script src="../node_modules/web3/dist/web3.min.js"></script>
+        <script src="javascript/contract-ingration.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <button id="regUser">Registra paciente</button>
+        <button id="getPN">Pega nome do paciente</button>
+        <button id="addDoc">Adiciona Médico</button>
+        <button id="addMR">Adiciona Prontuário</button>
+        <button id="getMR">Retorna Prontuário</button>
+        <button id="getAuth">Retorna autorizados por médico</button>
+        <script>
+            $("#regUser").click(function(){
+                setPacientName()
+            });
+            $("#getPN").click(function(){
+                getPacientName()
+            });
+            $("#addDoc").click(function(){
+                addDoctorOnList()
+            });
+            $("#addMR").click(function(){
+                addMedicalRecord()
+            });
+            $("#getMR").click(function(){
+                getMedicalRecord()
+            });
+            $("#getAuth").click(function(){
+                getAllAuthorizedPacientsByDoctor()
+            });
+            
+        </script>
+    </body>
+</html>
